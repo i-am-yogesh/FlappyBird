@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#box{
+    height: 500px;
+    width: 450px;
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 20px;
+    background: url(background.jpg) no-repeat;
+    background-size: 110%;
+    overflow: hidden;
+}
+
+#block{
+    height: 500px;
+    width: 50px;
+    background-color: rgb(36, 183, 36);
+    position: relative;
+    left: 450px;
+    animation: blockMovement 2s infinite linear;
+}
+
+@keyframes blockMovement {
+    0%{
+        left: 450px;
+    }
+    100%{
+        left: -50px;
+    }
+}
+
+#hole{
+    height: 150px;
+    width: 50px;
+    position: relative;
+    left: 450px;
+    top: -500px;
+    background: url(finger.png);
+    background-size: 50px 150px;
+    animation: blockMovement 2s infinite linear;
+}
+
+#character{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    left: 41%;
+}
