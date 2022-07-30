@@ -51,3 +51,9 @@
     top: 100px;
     left: 41%;
 }
+
+.score{
+    text-align: center;
+    font-size: 68px;
+    margin-top: 15px;
+}
